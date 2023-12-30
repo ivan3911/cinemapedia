@@ -1,6 +1,8 @@
+import 'package:cinemapedia/presentation/delegates/search_movie_delegate.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class CustomAppbar extends StatelessWidget {
+class CustomAppbar extends ConsumerWidget {
   const CustomAppbar({super.key});
 
   @override
@@ -23,7 +25,16 @@ class CustomAppbar extends StatelessWidget {
             const Spacer(),
       
             IconButton(onPressed: (){
+
+              final movieRespositoryProvider = ref.
       
+              showSearch(
+                context: context, 
+                delegate: SearchMovieDelegate(
+                  searchMovies: 
+                )
+                );
+
             },
             icon: const Icon( Icons.search)
             )

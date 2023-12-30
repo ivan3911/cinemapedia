@@ -234,7 +234,7 @@ class _CustomSliverAppBar extends StatelessWidget {
                     delay: const Duration(milliseconds: 150),
                     );
                 },
-                ),
+              ),
             ),
 
             const SizedBox.expand(
