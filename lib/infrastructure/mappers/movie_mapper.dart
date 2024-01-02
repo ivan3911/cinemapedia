@@ -17,7 +17,7 @@ class MovieMapper {
       popularity: moviedb.popularity,
       posterPath: (moviedb.posterPath != '')
       ? 'https://image.tmdb.org/t/p/w500${moviedb.posterPath}' 
-      : 'no-poster'
+      : 'https://www.filmfodder.com/reviews/images/poster-not-available.jpg'
       ,
       releaseDate: moviedb.releaseDate != null ? moviedb.releaseDate! : DateTime.now(),
       title: moviedb.title,
